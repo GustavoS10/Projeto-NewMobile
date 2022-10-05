@@ -1,0 +1,87 @@
+body{
+    background: #6C63FF;
+}
+#form-container{
+    background: #F8F8F8;
+    border-radius: 25px;
+    box-shadow: .5px 10px 15px rgba(102, 3, 141, 0.747);
+    margin: 25px auto;
+    padding: 40px;
+    margin-top: 70px;
+}
+@media(min-widht: 768px){
+    #form-container{
+        margin: 50px;
+        padding: 50px;
+    }
+}
+.hidden{
+    display: none;
+}
+#form-container h1{
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#form-container a{
+    transition: .5s;
+    color: #222;
+    background: #6C63FF;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .7s;
+    border-radius: 40px;
+    border: 1px solid transparent;
+}
+#form-container a:hover{
+    color: #6C63FF;
+    border-color: #6C63FF;
+    background: transparent;
+}
+#form-container #btnentrar{
+    transition: .5s;
+}
+#form-container form{
+    padding-bottom: 90px;
+}
+#form-container input{
+    border-color: #6C63FF;
+
+}
+#form-container .form-control{
+    border: none;
+    border-bottom: 1px solid #6C63FF;
+    border-radius: 0;
+}
+#form-container .form-control:focus{
+    box-shadow: none;
+}
+#form-container .form-floating label{
+    color: #6C63FF;
+}
+#form-container .form-floating > .form-control:focus ~ label{
+    color: #05006d;
+}
+#form-container input[type="submit"]{
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+    margin: 5px
+}
+#form-container input[type="checkbox"]:checked{
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+    
+}
+.btn .btn-primary{
+    width: 100%;
+}
+@media(min-width: 946px){
+    .btn.btn-primary{
+        display: inline-block;
+        width: auto;
+    }
+}

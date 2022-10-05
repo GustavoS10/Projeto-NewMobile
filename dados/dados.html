@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Cliente</title>
+    <!--Bootstrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <script src="./dados.js" defer></script>
+</head>
+<body>
+    <div class="container col-12 col-md-9" id="form-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Clientes Cadastrados</h1>
+                <input type="submit" class="btn btn-primary hiden" value="Carregar" onclick="clicar()" id="btnentrar">
+                <input type="submit" class="btn btn-primary" value="Atualizar Página" onclick="refresh()" id="btnentrar">
+            </div>
+            <div class="col-md-6">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <img src="../img/sign_in.svg" alt="hello" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" id='tabelaJs'>
+        </div>
+        <div class="col-md-6" id="deletar">
+            <form class="bform" action="../api/deletar.php" method="get">
+                <input type="number" class="ocultar del form-control" required placeholder="Digite o ID para deletar" id="delete" name="delete">
+                <input type="submit" class="ocultar del btn btn-primary" value="Deletar Registro" id="btnentrar">
+            </form>
+        </div>
+        <a href="http://localhost/newmobile/index.html">Clique aqui para voltar a home!</a>
+    </div>
+</body>
+</html>
