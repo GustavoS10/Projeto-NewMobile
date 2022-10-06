@@ -14,6 +14,7 @@
 </p><br>
 #Como incializar o projeto<br>
 <ul>
+  <li>Abrir o arquivo do banco de dados</li>
   <li>Abra o Xampp e inicialize o Apache e o MySQL </li>
   <li>Abra seu navegador</li>
   <li>Abra a pasta do site com o Visual Studio Code</li>
